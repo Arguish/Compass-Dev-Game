@@ -6,7 +6,7 @@ function Hello() {
 
   return (
     <div>
-      {" "}
+      <button className="contrast"> Clickme!</button>
       <span>{meaning}</span> Hello
     </div>
   );
