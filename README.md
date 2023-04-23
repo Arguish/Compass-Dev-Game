@@ -14,4 +14,5 @@ La idea de este proyecto es partiendo de unos conceptos generales, ver que tan l
 
 ## Docs
 
-. https://picocss.com/docs/buttons.html
+- https://picocss.com/docs/buttons.html
+- https://www.joshwcomeau.com/react/announcing-use-sound-react-hook/

@@ -1,4 +1,5 @@
-import { GlobalContext, useState } from "./Context";
+import { GlobalContext } from "./Context";
+import { useState } from "react";
 
 function ContextProvider({ children }) {
   const meaning = 42;
