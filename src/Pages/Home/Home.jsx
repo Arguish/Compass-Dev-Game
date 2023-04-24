@@ -17,6 +17,9 @@ function Home() {
             <NavLink to="/Inventory">
               <button>Inventario</button>
             </NavLink>
+            <NavLink to="/Test">
+              <button>Test</button>
+            </NavLink>
           </div>
         </div>
         <HomeButton></HomeButton>
