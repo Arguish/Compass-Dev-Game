@@ -4,9 +4,6 @@ import { Hero } from "./HeroClass/HeroClass";
 
 function NewHero() {
   const [name, setname] = useState("");
-  const setKeyName = (str) => {
-    return str.replaceAll(" ", "_").replaceAll(".", "_");
-  };
 
   return (
     <div>
@@ -19,17 +16,18 @@ function NewHero() {
           }}
           type="text"
           name="name"
+          value={name}
           id=""
         />
       </label>
       <button
-        onClick={() =>
-          localStorage.setItem(setKeyName(name), JSON.stringify(new Hero(name)))
-        }
+        onClick={() => {
+          localStorage.setItem(name, JSON.stringify(new Hero(name)));
+          setname("");
+        }}
       >
         Create
       </button>
-      <HomeButton></HomeButton>
     </div>
   );
 }

@@ -15,7 +15,6 @@ function Public() {
         <Route path="/Test" element={<Test></Test>}></Route>
         <Route path="/Inventory" element={<Inventory></Inventory>}></Route>
         <Route path="/Continue" element={<Continue></Continue>}></Route>
-        <Route path="/NewHero" element={<NewHero></NewHero>}></Route>
         <Route path="/Shop" element={<Shop></Shop>}></Route>
         <Route path="/Options" element={<Options></Options>}></Route>
       </Routes>

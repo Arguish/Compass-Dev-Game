@@ -1,5 +1,5 @@
 import { GlobalContext } from "./Context";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 //Imports ^^^^^^^^^
 /////////////////
@@ -9,6 +9,12 @@ import { useState } from "react";
 
 function ContextProvider({ children }) {
   const [ActiveHero, setActiveHero] = useState({});
+  useEffect(() => {
+    ActiveHero.savedtimes++;
+    console.log(ActiveHero.id);
+    console.log(": save game");
+    localStorage.setItem(ActiveHero.id, JSON.stringify(ActiveHero));
+  }, [ActiveHero]);
 
   return (
     <>
