@@ -8,17 +8,11 @@ import { useState } from "react";
 //Componet exported VVVVVVVVVV
 
 function ContextProvider({ children }) {
-  const [inventory, setinventory] = useState([]);
-  const addToInventory = (item) => {
-    setinventory([...inventory, item]);
-  };
-  const removefromInventory = (item) => {};
+  const [ActiveHero, setActiveHero] = useState({});
 
   return (
     <>
-      <GlobalContext.Provider
-        value={{ inventory, addToInventory, removefromInventory }}
-      >
+      <GlobalContext.Provider value={{ ActiveHero, setActiveHero }}>
         {children}
       </GlobalContext.Provider>
     </>

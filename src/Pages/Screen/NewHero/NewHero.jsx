@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HomeButton from "../../../Components/HomeButton/HomeButton";
+import { Hero } from "./HeroClass/HeroClass";
 
 function NewHero() {
   const [name, setname] = useState("");
@@ -7,13 +8,6 @@ function NewHero() {
     return str.replaceAll(" ", "_").replaceAll(".", "_");
   };
 
-  const createPlayer = () => {
-    return {
-      id: name,
-      type: "player",
-      inventory: [],
-    };
-  };
   return (
     <div>
       NewHero
@@ -30,7 +24,7 @@ function NewHero() {
       </label>
       <button
         onClick={() =>
-          localStorage.setItem(setKeyName(name), JSON.stringify(createPlayer()))
+          localStorage.setItem(setKeyName(name), JSON.stringify(new Hero(name)))
         }
       >
         Create
