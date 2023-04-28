@@ -15,9 +15,9 @@ function HomeButton() {
         style={{ textAlign: "center" }}
       >
         <NavLink to="/">
-          <a href="#" role="button">
+          <p href="#" role="button">
             Menú
-          </a>{" "}
+          </p>{" "}
         </NavLink>
       </div>
     </>

@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { NavLink } from "react-router-dom";
 import HomeButton from "../../../Components/HomeButton/HomeButton";
 import { GlobalContext } from "../../../Context/Context/Context";
 import NewHero from "../NewHero/NewHero";
@@ -18,12 +19,18 @@ const CharSelect = (array) => {
   return (
     <>
       {array.map((c) => (
-        <li>
+        <li key={c.id}>
           <div>
-            <button onClick={() => setActiveHero(c)}>
-              <h3>{c.id}</h3>
-              {"GO ->"}
-            </button>
+            <NavLink to="/">
+              <button
+                onClick={() => {
+                  setActiveHero(c);
+                }}
+              >
+                <h3>{c.id}</h3>
+                {"GO ->"}
+              </button>
+            </NavLink>
           </div>
         </li>
       ))}

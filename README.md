@@ -35,6 +35,7 @@
   - Sistema de autoguardado con UseEffect
   - Seleccion de personajes antiguo o creacion de nuevo
   - Hero Class en archivo independiente
+  - Al crear heroe nuevo redirige al menu principal y lo establece como el jugador activo
 
 ---
 

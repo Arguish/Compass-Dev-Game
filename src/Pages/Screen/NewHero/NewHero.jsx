@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import HomeButton from "../../../Components/HomeButton/HomeButton";
 import { Hero } from "./HeroClass/HeroClass";
+import { NavLink } from "react-router-dom";
+import { GlobalContext } from "../../../Context/Context/Context";
 
 function NewHero() {
+  const { ActiveHero, setActiveHero } = useContext(GlobalContext);
   const [name, setname] = useState("");
 
   return (
@@ -20,14 +23,17 @@ function NewHero() {
           id=""
         />
       </label>
-      <button
-        onClick={() => {
-          localStorage.setItem(name, JSON.stringify(new Hero(name)));
-          setname("");
-        }}
-      >
-        Create
-      </button>
+      <NavLink to="/">
+        <button
+          onClick={() => {
+            localStorage.setItem(name, JSON.stringify(new Hero(name)));
+            setActiveHero(JSON.parse(localStorage.getItem(name)));
+            setname("");
+          }}
+        >
+          Create
+        </button>
+      </NavLink>
     </div>
   );
 }
