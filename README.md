@@ -26,15 +26,21 @@
 - Hasta ahora:
   - React Route template
   - PicoCss que es un poco caca
-  - local storage aprendido (Falta implementar Guardado)
+  - local storage aprendido ~~(Falta implementar Guardado)~~
   - Sistema de incremento y decremento de precios.
   - Carta de objeto en la tienda
   - Menu provisional
+  - Creacion de personaje mediante clases
+  - Guardado depersonaje individual mediante local storage
+  - Sistema de autoguardado con UseEffect
+  - Seleccion de personajes antiguo o creacion de nuevo
+  - Hero Class en archivo independiente
 
 ---
 
 - Ongoing:
-  - Creacion de personaje (local)
   - inventario
   - carta inventario
   - tabla de estilos
+  - Cambiar Pico por Tailwind?
+  - Navbar con divisas?
