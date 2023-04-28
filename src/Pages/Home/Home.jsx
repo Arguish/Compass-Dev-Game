@@ -20,6 +20,9 @@ function Home() {
             <NavLink to="/Test">
               <button>Test</button>
             </NavLink>
+            <NavLink to="/HeroPage">
+              <button>HeroPage</button>
+            </NavLink>
             <NavLink to="/Continue">
               <button>Continue</button>
             </NavLink>

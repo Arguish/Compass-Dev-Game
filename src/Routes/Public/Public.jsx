@@ -6,6 +6,7 @@ import NewHero from "../../Pages/Screen/NewHero/NewHero.jsx";
 import Continue from "../../Pages/Screen/Continue/Continue.jsx";
 import Options from "../../Pages/Screen/Options/Options.jsx";
 import Inventory from "../../Pages/Screen/Inventory/Inventory.jsx";
+import HeroPage from "../../Pages/Screen/HeroPage/HeroPage.jsx";
 
 function Public() {
   return (
@@ -13,6 +14,7 @@ function Public() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/Test" element={<Test></Test>}></Route>
+        <Route path="/HeroPage" element={<HeroPage></HeroPage>}></Route>
         <Route path="/Inventory" element={<Inventory></Inventory>}></Route>
         <Route path="/Continue" element={<Continue></Continue>}></Route>
         <Route path="/Shop" element={<Shop></Shop>}></Route>
