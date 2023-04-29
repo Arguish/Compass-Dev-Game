@@ -7,6 +7,7 @@ function HeroPage() {
   return (
     <>
       {ActiveHero.id}
+      <h1 className="">Hello world</h1>
       <HomeButton></HomeButton>
     </>
   );

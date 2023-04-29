@@ -10,9 +10,8 @@ function HomeButton() {
     <>
       <hr />
       <div
+        class="bg-purple-600 rounded-full w-20 h-10 m-auto flex-col items-center hover:bg-purple-300"
         onClick={() => play()}
-        className="container"
-        style={{ textAlign: "center" }}
       >
         <NavLink to="/">
           <p href="#" role="button">
