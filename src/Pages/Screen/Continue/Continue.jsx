@@ -50,7 +50,6 @@ function Continue() {
         <ul>{CharSelect(filterPlayers())}</ul>
       </div>
       <NewHero></NewHero>
-      <HomeButton></HomeButton>
     </>
   );
 }

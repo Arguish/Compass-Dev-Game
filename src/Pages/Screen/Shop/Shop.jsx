@@ -48,7 +48,6 @@ function Shop() {
           );
         })}
       </div>
-      <HomeButton></HomeButton>
     </>
   );
 }

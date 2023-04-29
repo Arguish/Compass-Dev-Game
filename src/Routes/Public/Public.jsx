@@ -10,7 +10,7 @@ import HeroPage from "../../Pages/Screen/HeroPage/HeroPage.jsx";
 
 function Public() {
   return (
-    <>
+    <div>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/Test" element={<Test></Test>}></Route>
@@ -20,7 +20,7 @@ function Public() {
         <Route path="/Shop" element={<Shop></Shop>}></Route>
         <Route path="/Options" element={<Options></Options>}></Route>
       </Routes>
-    </>
+    </div>
   );
 }
 

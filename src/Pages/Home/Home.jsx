@@ -8,8 +8,8 @@ function Home() {
     <>
       <div className="container">
         <h1 style={{ textAlign: "center" }}>Menú</h1>
-        <div className="grid">
-          <div>
+        <div>
+          <div className="body">
             {" "}
             <NavLink to="/Shop">
               <button>Tienda</button>
@@ -31,7 +31,6 @@ function Home() {
             </NavLink>
           </div>
         </div>
-        <HomeButton></HomeButton>
       </div>
     </>
   );

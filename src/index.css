@@ -9,3 +9,7 @@ button {
 div {
   @apply bg-gray-800 border-gray-700 border-2 box-border;
 }
+
+.body {
+  @apply m-auto flex flex-col items-stretch;
+}

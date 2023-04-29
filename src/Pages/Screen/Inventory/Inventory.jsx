@@ -2,12 +2,7 @@ import React from "react";
 import HomeButton from "../../../Components/HomeButton/HomeButton";
 
 function Inventory() {
-  return (
-    <div>
-      Inventory
-      <HomeButton></HomeButton>
-    </div>
-  );
+  return <div>Inventory</div>;
 }
 
 export default Inventory;
