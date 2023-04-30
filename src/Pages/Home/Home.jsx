@@ -8,7 +8,7 @@ function Home() {
       <div>
         <h1 style={{ textAlign: "center" }}>Menú</h1>
         <div>
-          <div className="body">
+          <div className="flex flex-col items-center">
             <NavLink to="/Continue">
               <button>Continue</button>
             </NavLink>

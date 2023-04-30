@@ -7,7 +7,7 @@ import back from "../../assets/Images/Archivos SRCG/Randomize72.wav";
 function HomeButton() {
   const [play] = useSound(back);
   return (
-    <div className="mb-0 fixed inset-x-0 bottom-0 flex flex-start">
+    <div className="mb-0  inset-x-0 bottom-0 flex flex-start">
       <hr />
       <div onClick={() => play()}>
         <NavLink to="/">

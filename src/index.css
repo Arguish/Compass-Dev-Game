@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  margin: auto;
+  margin-top: 10px;
+  padding: 0px;
+  width: 95vw;
+  height: 95vh;
+}
+
 .body {
   @apply m-auto flex flex-col items-stretch;
   @apply pb-10;
@@ -12,7 +20,9 @@ button {
 }
 
 div {
-  @apply border-gray-700 border-2 box-border;
+  /*   background-color: rgba(250, 235, 215, 0.1);
+ */
+  border: 0.01px solid rgba(255, 0, 0, 0.441);
 }
 
 h1 {

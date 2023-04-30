@@ -7,15 +7,28 @@ import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
   return (
-    <>
+    <div
+      style={{
+        height: "95vh",
+        width: "95vw",
+        display: "grid",
+        alignItems: "center",
+        justifyContent: "stretch",
+        alignContent: "space-between",
+        padding: "0px",
+        margin: "0px ",
+      }}
+    >
       <ContextProvider>
         <BrowserRouter>
           <NavBar></NavBar>
           <div
             style={{
-              border: "1px solid red",
               height: "83vh",
-              width: "90vw",
+              width: "95vw",
+              overflow: "scroll",
+              display: "grid",
+              alignItems: "center",
             }}
           >
             <Public> </Public>
@@ -23,7 +36,7 @@ function App() {
           <HomeButton></HomeButton>
         </BrowserRouter>
       </ContextProvider>
-    </>
+    </div>
   );
 }
 
