@@ -1,8 +1,7 @@
 import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
-import HomeButton from "../../../Components/HomeButton/HomeButton";
-import { GlobalContext } from "../../../Context/Context/Context";
-import NewHero from "../NewHero/NewHero";
+import { GlobalContext } from "../../../../Context/Context/Context";
+import NewHero from "../NewHero";
 
 const filterPlayers = () => {
   const localPlayer = Object.values(localStorage).map((a) => {
