@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Home() {
   return (
     <>
-      <div className="container">
+      <div>
         <h1 style={{ textAlign: "center" }}>Menú</h1>
         <div>
           <div className="body">

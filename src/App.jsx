@@ -11,7 +11,15 @@ function App() {
       <ContextProvider>
         <BrowserRouter>
           <NavBar></NavBar>
-          <Public> </Public>
+          <div
+            style={{
+              border: "1px solid red",
+              height: "83vh",
+              width: "90vw",
+            }}
+          >
+            <Public> </Public>
+          </div>
           <HomeButton></HomeButton>
         </BrowserRouter>
       </ContextProvider>
