@@ -15,6 +15,9 @@ function Home() {
             <NavLink to="/Land">
               <button>Land</button>
             </NavLink>
+            <NavLink to="/Mission">
+              <button>Mission</button>
+            </NavLink>
             <NavLink to="/HeroPage">
               <button>HeroPage</button>
             </NavLink>
