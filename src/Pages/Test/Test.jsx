@@ -22,6 +22,10 @@ function Test() {
       <main>
         <section>
           <h2>Título de sección</h2>
+          <h3>Título de sección</h3>
+          <h4>Título de sección</h4>
+          <h5>Título de sección</h5>
+          <h6>Título de sección</h6>
           <p>Este es un párrafo de texto.</p>
           <blockquote>
             <p>Esta es una cita.</p>

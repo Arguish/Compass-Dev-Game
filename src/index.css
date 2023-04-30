@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.body {
+  @apply m-auto flex flex-col items-stretch;
+  @apply pb-10;
+}
+
 button {
   @apply w-28 bg-purple-600 rounded p-3 m-3 shadow-2xl hover:bg-purple-400;
 }
@@ -10,6 +15,37 @@ div {
   @apply bg-gray-800 border-gray-700 border-2 box-border;
 }
 
-.body {
-  @apply m-auto flex flex-col items-stretch;
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+h5 {
+  @apply text-sm;
+}
+
+h6 {
+  @apply text-xs;
+}
+
+p,
+ol,
+li,
+ul {
+  @apply text-base;
+}
+
+input {
+  @apply m-1 p-1;
 }
