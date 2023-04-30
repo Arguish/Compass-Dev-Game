@@ -8,6 +8,7 @@ import Inventory from "../../Pages/Screen/Inventory/Inventory.jsx";
 import HeroPage from "../../Pages/Screen/HeroPage/HeroPage.jsx";
 import Land from "../../Pages/Screen/Land/Land.jsx";
 import Mission from "../../Pages/Screen/Mission/Mission.jsx";
+import Garden from "../../Pages/Screen/Garden/Garden.jsx";
 
 function Public() {
   return (
@@ -19,6 +20,7 @@ function Public() {
         <Route path="/Land" element={<Land></Land>}></Route>
         <Route path="/HeroPage" element={<HeroPage></HeroPage>}></Route>
         <Route path="/Inventory" element={<Inventory></Inventory>}></Route>
+        <Route path="/Garden" element={<Garden></Garden>}></Route>
         <Route path="/Continue" element={<Continue></Continue>}></Route>
         <Route path="/Shop" element={<Shop></Shop>}></Route>
         <Route path="/Options" element={<Options></Options>}></Route>
