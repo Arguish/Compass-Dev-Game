@@ -8,7 +8,9 @@ import { useState, useEffect } from "react";
 //Componet exported VVVVVVVVVV
 
 function ContextProvider({ children }) {
+  const [actualID, setactualID] = useState(0);
   const [ActiveHero, setActiveHero] = useState({});
+
   useEffect(() => {
     ActiveHero.savedtimes++;
     console.log(ActiveHero.id);
@@ -18,7 +20,9 @@ function ContextProvider({ children }) {
 
   return (
     <>
-      <GlobalContext.Provider value={{ ActiveHero, setActiveHero }}>
+      <GlobalContext.Provider
+        value={{ ActiveHero, setActiveHero, actualID, setactualID }}
+      >
         {children}
       </GlobalContext.Provider>
     </>

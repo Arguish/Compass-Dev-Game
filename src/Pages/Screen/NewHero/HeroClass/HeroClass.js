@@ -1,7 +1,7 @@
 export class Hero {
-  constructor(id) {
+  constructor(id, name) {
     this.id = id;
-    this.type = "player";
+    this.name = name;
     this.inventory = [];
     this.money = 0;
     this.savedtimes = 0;
