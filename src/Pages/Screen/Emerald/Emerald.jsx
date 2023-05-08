@@ -31,15 +31,7 @@ const createBoard = (num) => {
 const Emerald = () => {
   console.log(createBoard(width));
   return (
-    <div
-      style={{
-        margin: "0px auto",
-        width: "50vw",
-        height: "50vw",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ",
-      }}
-    >
+    <div style={grid}>
       {createBoard(width).map((a) => (
         <h1
           draggable
@@ -59,3 +51,11 @@ const Emerald = () => {
 };
 
 export default Emerald;
+
+const grid = {
+  margin: "0px auto",
+  width: "50vw",
+  height: "50vw",
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ",
+};
