@@ -33,6 +33,9 @@ function Home() {
             <NavLink to="/Shop">
               <button>Tienda</button>
             </NavLink>
+            <NavLink to="/CustomHook">
+              <button>CustomHook</button>
+            </NavLink>
             <NavLink to="/Options">
               <button>Options</button>
             </NavLink>
